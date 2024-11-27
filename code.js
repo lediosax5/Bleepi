@@ -21,12 +21,11 @@ fs.createReadStream('contactos.csv').pipe(csv()).on('data', (row) => {
     try {
       const url = `https://web.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
       await pagina.goto(url);
-
       const sendButtonSelector = 'button[aria-label="Enviar"], button[aria-label="Send"]';
       await pagina.waitForSelector(sendButtonSelector, {timeout: 80000, state: 'visible'});
       await pagina.keyboard.press('Enter');
       await pagina.waitForTimeout(delay);
-    } catch {}
+    } catch (error) {console.error(`Error al enviar mensaje a ${numero}:`, error.message)}
   }
 
   await navegador.close();
