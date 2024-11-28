@@ -2,8 +2,11 @@
 cd /d "%~dp0"
 
 set /p delay="Cada cuantos segundos se envian los mensajes? (Ejemplo: 6): "
+if "%delay%"=="" set delay=7
 set /a "delay=%delay%" 2>nul
 if %delay% lss 1 set delay=7
+
+echo Se usaran %delay% segundos como intervalo entre mensajes.
 
 echo Instalando dependencias...
 call npm install || (echo Error al instalar dependencias. Verifique Node.js e intenta nuevamente. && pause && exit)
