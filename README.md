@@ -10,4 +10,4 @@
 Listo! Ahora podes ejecutar Bleepi.bat para enviar mensajes.
 
 
-- Algunos antivirus pueden detectar este proyecto como potencialmente malicioso debido al uso de scripts de automatización. Esto es un falso positivo, si tu antivirus lo bloquea, considera añadirlo a la lista de exclusiones.
+- Al descargarlo como .zip algunos antivirus pueden detectar este proyecto como potencialmente malicioso debido al uso de scripts de automatización. Esto es un falso positivo, si tu antivirus lo bloquea, considera añadirlo a la lista de exclusiones o clonarlo en vez de descargarlo como .zip.
