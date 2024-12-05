@@ -21,7 +21,7 @@ fs.createReadStream('contactos.csv').pipe(csv()).on('data', (row) => {
     try {
       const url = `https://web.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
       await pagina.goto(url);
-      const sendButtonSelector = 'button[aria-label="Enviar"], button[aria-label="Send"]';
+      const sendButtonSelector = 'button[aria-label="Enviar"], button[aria-label="Send"], button[aria-label="Envoyer"], button[aria-label="Invia"], button[aria-label="Senden"], button[aria-label="भेजें"]';
       await pagina.waitForSelector(sendButtonSelector, {timeout: 100000, state: 'visible'});
       await pagina.keyboard.press('Enter');
       await pagina.waitForTimeout(delay);

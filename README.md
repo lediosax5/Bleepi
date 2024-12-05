@@ -10,4 +10,6 @@
 Listo! Ahora podes ejecutar Bleepi.bat para enviar mensajes.
 
 
-- Al descargarlo como .zip algunos antivirus pueden detectar este proyecto como potencialmente malicioso debido al uso de scripts de automatización. Esto es un falso positivo, si tu antivirus lo bloquea, considera añadirlo a la lista de exclusiones o clonarlo en vez de descargarlo como .zip.
+- Al descargarlo como .ZIP algunos antivirus pueden detectarlo como potencialmente malicioso debido al uso de scripts de automatización. Esto es un falso positivo, si tu antivirus lo bloquea, considera añadirlo a la lista de exclusiones o clonarlo en vez de descargarlo como un .ZIP.
+
+- Al ser un archivo separado por comas, los mensajes con comas van entre comillas, por ejemplo: "Hola, ¿cómo estás?"
