@@ -2,7 +2,7 @@ const {chromium} = require('playwright');
 const fs = require('fs');
 const csv = require('csv-parser');
 const contactos = [];
-const delay = process.argv[2] ? parseInt(process.argv[2]) * 1000 : 7 * 1000;
+const delay = process.argv[2] ? parseInt(process.argv[2]) * 1000 : 8 * 1000;
 
 fs.createReadStream('contactos.csv').pipe(csv()).on('data', (row) => {
   contactos.push({
